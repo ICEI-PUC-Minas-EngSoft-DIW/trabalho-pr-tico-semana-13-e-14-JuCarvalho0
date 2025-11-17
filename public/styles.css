@@ -1,0 +1,1045 @@
+/* Variáveis de cores para antiquário */
+:root {
+    --gold: #D4AF37;
+    --gold-light: #F4E4A6;
+    --gold-dark: #B8860B;
+    --gray-dark: #2C2C2C;
+    --gray-medium: #4A4A4A;
+    --gray-light: #F8F9FA;
+    --gray-border: #E0E0E0;
+    --brown-dark: #5D4037;
+    --brown-medium: #8D6E63;
+    --white: #FFFFFF;
+}
+
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: var(--gray-medium);
+    background-color: var(--white);
+}
+
+/* Header e Navegação - Estilo Antiquário */
+.header {
+    background: linear-gradient(135deg, var(--brown-dark) 0%, var(--gray-dark) 100%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    border-bottom: 2px solid var(--gold);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--gold) !important;
+    font-family: 'Georgia', serif;
+}
+
+.navbar-brand small {
+    font-size: 0.7rem;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.navbar-nav .nav-link {
+    color: var(--gold-light) !important;
+    font-weight: 500;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+    font-family: 'Georgia', serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--gold) !important;
+    border-bottom: 2px solid var(--gold);
+}
+
+/* ============================================== */
+/* HERO SECTION COM CAROUSEL - AJUSTE DINÂMICO */
+/* ============================================== */
+.hero-section {
+    /* Altura que ocupa 85% da tela visível */
+    height: 85vh; 
+    /* Margem para o header fixo */
+    margin-top: 86px; 
+    overflow: hidden; 
+}
+
+/* Garante que os elementos do carrossel ocupem 100% da altura da seção */
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 100%; 
+}
+
+/* Estilo para a imagem injetada pelo JavaScript */
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    /* Escurecer levemente para o texto destacar */
+    filter: brightness(0.7); 
+}
+
+/* Legenda do Carrossel */
+/* O app.js já adiciona fundo escuro à legenda */
+.carousel-caption {
+    bottom: 5%; 
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 80%;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1; 
+}
+
+.carousel-caption h5 {
+    color: var(--gold-light);
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    color: var(--gray-light);
+    font-size: 1.1rem;
+    text-shadow: none;
+}
+
+/* Controles (Setas) do Carrossel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--gold); 
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+/* ============================================== */
+/* FIM DOS ESTILOS DO CARROSSEL */
+/* ============================================== */
+
+
+/* Botões */
+.btn-gold {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+    color: var(--gray-dark);
+    border: none;
+    padding: 15px 35px;
+    font-weight: 600;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-family: 'Georgia', serif;
+}
+
+.btn-gold:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+    color: var(--gray-dark);
+}
+
+/* Seções */
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-header {
+    margin-bottom: 80px;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--brown-dark);
+    margin-bottom: 1.5rem;
+    position: relative;
+    font-family: 'Georgia', serif;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--gold);
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: var(--brown-medium);
+    font-style: italic;
+}
+
+/* Filtros do Acervo */
+.acervo-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 2px solid var(--gold);
+    color: var(--gold);
+    padding: 10px 25px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-family: 'Georgia', serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--gold);
+    color: var(--gray-dark);
+}
+
+/* Produtos - Cards de Antiquário */
+.bg-light {
+    background-color: var(--gray-light) !important;
+}
+
+.product-card {
+    background: var(--white);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+    border: 1px solid var(--gray-border);
+    height: 100%;
+    position: relative;
+}
+
+.product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid var(--gold);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.product-card:hover::before {
+    opacity: 1;
+}
+
+.card-img-wrapper {
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    background-color: #f5f5f5;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(93, 64, 55, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+    opacity: 1;
+    height: 80px;
+}
+
+.product-content {
+    padding: 25px;
+    position: relative;
+}
+
+.product-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--brown-dark);
+    margin-bottom: 12px;
+    font-family: 'Georgia', serif;
+}
+
+.product-description {
+    color: var(--gray-medium);
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.product-meta {
+    border-top: 1px solid var(--gray-border);
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.price-tag {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gold-dark);
+    margin-bottom: 0;
+    font-family: 'Georgia', serif;
+}
+
+.periodo-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--gold);
+    color: var(--gray-dark);
+    padding: 5px 12px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Sobre Nós */
+.about-section img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.about-content {
+    padding-right: 40px;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    right: 25px;
+    bottom: 25px;
+    border: 3px solid var(--gold);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background: var(--gold);
+    color: var(--gray-dark);
+    padding: 20px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.experience-badge small {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+.features-list {
+    margin-top: 40px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: var(--brown-dark);
+}
+
+.feature-item i {
+    font-size: 1.4rem;
+    margin-right: 20px;
+    width: 30px;
+}
+
+/* Serviços (Seção não presente no HTML fornecido, mas mantida no CSS) */
+.service-card {
+    padding: 40px 30px;
+    background: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border-top: 4px solid transparent;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-top: 4px solid var(--gold);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.service-card i {
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.service/* Variáveis de cores para antiquário */
+:root {
+    --gold: #D4AF37;
+    --gold-light: #F4E4A6;
+    --gold-dark: #B8860B;
+    --gray-dark: #2C2C2C;
+    --gray-medium: #4A4A4A;
+    --gray-light: #F8F9FA;
+    --gray-border: #E0E0E0;
+    --brown-dark: #5D4037;
+    --brown-medium: #8D6E63;
+    --white: #FFFFFF;
+}
+
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: var(--gray-medium);
+    background-color: var(--white);
+}
+
+/* Header e Navegação - Estilo Antiquário */
+.header {
+    background: linear-gradient(135deg, var(--brown-dark) 0%, var(--gray-dark) 100%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    border-bottom: 2px solid var(--gold);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--gold) !important;
+    font-family: 'Georgia', serif;
+}
+
+.navbar-brand small {
+    font-size: 0.7rem;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.navbar-nav .nav-link {
+    color: var(--gold-light) !important;
+    font-weight: 500;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+    font-family: 'Georgia', serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--gold) !important;
+    border-bottom: 2px solid var(--gold);
+}
+
+/* ============================================== */
+/* HERO SECTION COM CAROUSEL - AJUSTE DINÂMICO */
+/* ============================================== */
+.hero-section {
+    /* Altura que ocupa 85% da tela visível */
+    height: 85vh; 
+    /* Margem para o header fixo */
+    margin-top: 86px; 
+    overflow: hidden; 
+}
+
+/* Garante que os elementos do carrossel ocupem 100% da altura da seção */
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 100%; 
+}
+
+/* Estilo para a imagem injetada pelo JavaScript */
+.carousel-img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover; 
+    /* Escurecer levemente para o texto destacar */
+    filter: brightness(0.7); 
+}
+.carousel-item {
+  background-color: var(--brown-dark); /* Fundo marrom enquanto troca de imagem */
+}
+
+/* Legenda do Carrossel */
+/* O app.js já adiciona fundo escuro à legenda */
+.carousel-caption {
+    bottom: 5%; 
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 80%;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1; 
+}
+
+.carousel-caption h5 {
+    color: var(--gold-light);
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    color: var(--gray-light);
+    font-size: 1.1rem;
+    text-shadow: none;
+}
+
+/* Controles (Setas) do Carrossel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--gold); 
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+/* ============================================== */
+/* FIM DOS ESTILOS DO CARROSSEL */
+/* ============================================== */
+
+
+/* Botões */
+.btn-gold {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+    color: var(--gray-dark);
+    border: none;
+    padding: 15px 35px;
+    font-weight: 600;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-family: 'Georgia', serif;
+}
+
+.btn-gold:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+    color: var(--gray-dark);
+}
+
+/* Seções */
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-header {
+    margin-bottom: 80px;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--brown-dark);
+    margin-bottom: 1.5rem;
+    position: relative;
+    font-family: 'Georgia', serif;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--gold);
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: var(--brown-medium);
+    font-style: italic;
+}
+
+/* Filtros do Acervo */
+.acervo-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 2px solid var(--gold);
+    color: var(--gold);
+    padding: 10px 25px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-family: 'Georgia', serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--gold);
+    color: var(--gray-dark);
+}
+
+/* Produtos - Cards de Antiquário */
+.bg-light {
+    background-color: var(--gray-light) !important;
+}
+
+.product-card {
+    background: var(--white);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+    border: 1px solid var(--gray-border);
+    height: 100%;
+    position: relative;
+}
+
+.product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid var(--gold);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.product-card:hover::before {
+    opacity: 1;
+}
+
+.card-img-wrapper {
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    background-color: #f5f5f5;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(93, 64, 55, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+    opacity: 1;
+    height: 80px;
+}
+
+.product-content {
+    padding: 25px;
+    position: relative;
+}
+
+.product-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--brown-dark);
+    margin-bottom: 12px;
+    font-family: 'Georgia', serif;
+}
+
+.product-description {
+    color: var(--gray-medium);
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.product-meta {
+    border-top: 1px solid var(--gray-border);
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.price-tag {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gold-dark);
+    margin-bottom: 0;
+    font-family: 'Georgia', serif;
+}
+
+.periodo-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--gold);
+    color: var(--gray-dark);
+    padding: 5px 12px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Sobre Nós */
+.about-section img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.about-content {
+    padding-right: 40px;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    right: 25px;
+    bottom: 25px;
+    border: 3px solid var(--gold);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background: var(--gold);
+    color: var(--gray-dark);
+    padding: 20px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.experience-badge small {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+.features-list {
+    margin-top: 40px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: var(--brown-dark);
+}
+
+.feature-item i {
+    font-size: 1.4rem;
+    margin-right: 20px;
+    width: 30px;
+}
+
+/* Serviços (Seção não presente no HTML fornecido, mas mantida no CSS) */
+.service-card {
+    padding: 40px 30px;
+    background: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border-top: 4px solid transparent;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-top: 4px solid var(--gold);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.service-card i {
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.service-card h4 {
+    color: var(--brown-dark);
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+.service-card p {
+    color: var(--gray-medium);
+    line-height: 1.7;
+}
+
+/* Formulário de Contato */
+.contact-form {
+    background: var(--white);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    border: 1px solid var(--gray-border);
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--brown-dark);
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+}
+
+.form-control {
+    border: 2px solid var(--gray-border);
+    border-radius: 3px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    font-family: 'Georgia', serif;
+}
+
+.form-control:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+}
+
+.contact-info {
+    padding: 30px 20px;
+}
+
+.contact-info i {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-info h4 {
+    color: var(--brown-dark);
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif;
+}
+
+/* Footer */
+.footer {
+    background: var(--brown-dark);
+    color: var(--gold-light);
+    padding: 50px 0 30px;
+    margin-top: 80px;
+    border-top: 3px solid var(--gold);
+}
+
+.social-links a {
+    color: var(--gold-light);
+    font-size: 1.5rem;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--gold);
+}
+
+/* Utilitários */
+.text-gold {
+    color: var(--gold) !important;
+}
+
+.bg-gold {
+    background-color: var(--gold) !important;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* ============================================== */
+/* RESPONSIVIDADE */
+/* ============================================== */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 70vh; /* Diminui a altura em telas menores */
+        margin-top: 76px;
+    }
+    
+    .carousel-caption {
+        bottom: 5%;
+        max-width: 90%;
+        padding: 15px;
+        transform: translateX(-50%); 
+    }
+    
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.9rem;
+        /* Esconde a descrição para economizar espaço em telas muito pequenas */
+        display: none; 
+    }
+    
+    .carousel-caption a.btn {
+        font-size: 0.8rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .about-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    
+    .contact-form {
+        padding: 30px 20px;
+    }
+    
+    .acervo-filters {
+        gap: 10px;
+    }
+    
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 0.7rem;
+    }
+    
+    .footer .text-end {
+        text-align: left !important;
+        margin-top: 20px;
+    }
+    
+    .social-links a {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-padding {
+        padding: 80px 0;
+    }
+    
+    .product-card {
+        margin-bottom: 30px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+}

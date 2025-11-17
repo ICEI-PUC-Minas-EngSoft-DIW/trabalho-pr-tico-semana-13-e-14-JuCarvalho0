@@ -1,0 +1,98 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Exemplo",
+      "email": "exemplo@email.com"
+    }
+  ],
+  "artefatos": [
+    {
+      "id": "1",
+      "nome": "Incensário Chinês Qing",
+      "descricao": "Raro incensário da dinastia Qing (1644-1912) com tampa de cão de Fó e base cloisonné. Excelente estado de conservação.",
+      "preco": "12500.00",
+      "imagem": "img6.png",
+      "destaque": true,
+      "categoria": "Porcelana",
+      "material": "Porcelana e esmalte cloisonné",
+      "periodo": "Século XIX",
+      "procedencia": "China",
+      "data_cadastro": "2024-11-02"
+    },
+    {
+      "id": "2",
+      "nome": "Castagneto Original - Óleo Sobre Tela",
+      "descricao": "Pintura original do mestre Castagneto, óleo sobre tela 34x23cm. Com moldura dourada original da época. Certificado de autenticidade.",
+      "preco": "85000.00",
+      "imagem": "img7.png",
+      "destaque": true,
+      "categoria": "Arte",
+      "material": "Óleo sobre tela",
+      "periodo": "c. 1890",
+      "dimensoes": "34x23cm",
+      "data_cadastro": "2024-11-01"
+    },
+    {
+      "id": "3",
+      "nome": "Relógio de Bolso Suíço",
+      "descricao": "Relógio de pulso banhado a ouro 18K da marca Omega, modelo De Ville, em perfeito estado de funcionamento.",
+      "preco": "4500.00",
+      "imagem": "img1.jpg",
+      "destaque": false,
+      "categoria": "Relojoaria",
+      "material": "Ouro 18K, Mecanismo suíço",
+      "periodo": "c. 1950",
+      "marca": "Omega",
+      "data_cadastro": "2024-10-30"
+    },
+    {
+      "id": "1e81",
+      "nome": "vaso",
+      "descricao": "vaso antigo da minha avó",
+      "preco": "300.10",
+      "categoria": "ceramica",
+      "material": "porcelana",
+      "periodo": "1988",
+      "imagem": "img7.png",
+      "destaque": false,
+      "data_cadastro": "2025-11-02"
+    },
+    {
+      "id": "9aec",
+      "nome": "Máscara de Jade Asteca",
+      "descricao": "Artefato ceremonial pré-colombiano autêntico.",
+      "preco": "50000.00",
+      "categoria": "artefato",
+      "material": "madeira",
+      "periodo": "1920",
+      "imagem": "img3",
+      "destaque": false,
+      "data_cadastro": "2025-11-02"
+    },
+    {
+      "id": "981b",
+      "nome": "vaso",
+      "descricao": "vaso de ouro",
+      "preco": "700000.00",
+      "categoria": "decoração",
+      "material": "ouro",
+      "periodo": "1870",
+      "imagem": "img2",
+      "destaque": false,
+      "data_cadastro": "2025-11-03"
+    },
+    {
+      "id": "44aa",
+      "nome": "vaso",
+      "descricao": "vaso de ouro antigo",
+      "preco": "70000.00",
+      "categoria": "artefato",
+      "material": "ouro puro",
+      "periodo": "1988",
+      "imagem": "img2",
+      "destaque": false,
+      "data_cadastro": "2025-11-03"
+    }
+  ]
+}

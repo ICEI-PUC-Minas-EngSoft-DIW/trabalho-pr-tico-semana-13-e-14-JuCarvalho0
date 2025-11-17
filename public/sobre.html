@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artefatos & Encantos - Antiquário e Colecionáveis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <!-- Header com Navegação -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#inicio">
+                    <i class="fas fa-crown me-2"></i>
+                    Artefatos & Encantos
+                    <small class="d-block fs-6">Antiquário & Colecionáveis</small>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#destaques">Destaques</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Acervo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">História</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section com Carousel -->
+    <section id="inicio" class="hero-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-image" style="background-image: url('');"></div>
+                    <div class="carousel-caption">
+                        <h1 class="display-4">Artefatos & Encantos</h1>
+                        <p class="lead">Antiquário & Peças de Coleção - Desde 1985</p>
+                        <a href="#produtos" class="btn btn-gold">Explorar Acervo</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image" style="background-image: url('');"></div>
+                    <div class="carousel-caption">
+                        <h2 class="display-5">Peças com História</h2>
+                        <p>Relíquias que atravessaram séculos</p>
+                        <a href="#sobre" class="btn btn-gold">Nossa Trajetória</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image" style="background-image: url('');"></div>
+                    <div class="carousel-caption">
+                        <h2 class="display-5">Avaliação Especializada</h2>
+                        <p>Expertise em antiguidades e colecionáveis</p>
+                        <a href="#contato" class="btn btn-gold">Consultoria</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+    <!-- Nossa História -->
+    <section id="sobre" class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2 class="section-title">Nossa História</h2>
+                        <p class="lead">
+                            O <strong class="text-gold">Artefatos & Encantos</strong> nasceu em 1985 da paixão por preservar a história através de objetos que testemunharam o passar do tempo.
+                        </p>
+                        <p>
+                            Por mais de três décadas, temos nos dedicado a encontrar, restaurar e preservar peças que contam histórias. Cada item em nosso acervo foi cuidadosamente selecionado por sua autenticidade, qualidade artística e valor histórico.
+                        </p>
+                        <p>
+                            Trabalhamos com especialistas em diversas áreas - mobiliário, porcelanas, relógios, arte sacra e objetos de arte - garantindo a procedência e autenticidade de cada peça.
+                        </p>
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <i class="fas fa-history text-gold"></i>
+                                <span>Mais de 35 anos de tradição</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-certificate text-gold"></i>
+                                <span>Autenticidade garantida</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-restroom text-gold"></i>
+                                <span>Serviço de restauração</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-search text-gold"></i>
+                                <span>Avaliação especializada</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="pasta img/NOSSO.png" 
+                             alt="Nosso Antiquário" class="img-fluid rounded shadow">
+                        <div class="experience-badge">
+                            <span>35+ Anos</span>
+                            <small>de Experiência</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr style="border: 0; height: 4px; background-color: #543813; margin: 24px 0;">
+<h2 class="section-title">Sobre o aluno</h2>
+                        <p class="lead">
+                            <strong class="text-gold">Nome: Julia Carvalho Silva</strong> <br>Curso: Engenharia de Software <br> <strong class="text-gold">Turma: Noite</strong>
+                        </p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 1985-2025 Artefatos & Encantos Antiquário. Todos os direitos reservados. <br> Aluna: Júlia Carvalho Silva
+                    <br>Curso: Engenharia de Software 
+                  <br>E-mail-: juliacarvalhosilva2006@gmail.com/p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
